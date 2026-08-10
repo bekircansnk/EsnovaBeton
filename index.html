@@ -12,7 +12,7 @@
   <style>
     :root {
       --bg-dark: #12151C;
-      --card-bg: rgba(30, 34, 42, 0.7);
+      --card-bg: rgba(30, 34, 42, 0.75);
       --card-border: rgba(255, 255, 255, 0.08);
       --text-main: #F3F4F6;
       --text-muted: #9CA3AF;
@@ -38,11 +38,10 @@
       flex-direction: column;
       overflow-x: hidden;
       background-image: 
-        radial-gradient(circle at 15% 20%, rgba(255, 87, 34, 0.12) 0%, transparent 40%),
-        radial-gradient(circle at 85% 80%, rgba(37, 99, 235, 0.12) 0%, transparent 40%);
+        radial-gradient(circle at 15% 20%, rgba(255, 87, 34, 0.14) 0%, transparent 40%),
+        radial-gradient(circle at 85% 80%, rgba(37, 99, 235, 0.14) 0%, transparent 40%);
     }
 
-    /* Grid overlay */
     .bg-grid {
       position: fixed;
       inset: 0;
@@ -62,7 +61,6 @@
       z-index: 1;
     }
 
-    /* Header */
     header {
       padding: 2rem 0;
       display: flex;
@@ -79,8 +77,8 @@
     }
 
     .logo-icon {
-      width: 44px;
-      height: 44px;
+      width: 46px;
+      height: 46px;
       background: linear-gradient(135deg, var(--brand-orange), #D93804);
       border-radius: 10px;
       display: flex;
@@ -91,7 +89,7 @@
 
     .logo-text {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       font-weight: 700;
       color: #FFFFFF;
       letter-spacing: -0.5px;
@@ -130,7 +128,6 @@
       50% { opacity: 0.4; transform: scale(1.2); }
     }
 
-    /* Main Hero Section */
     main {
       flex: 1;
       padding: 4rem 0;
@@ -147,20 +144,21 @@
 
     .hero-tag {
       display: inline-block;
-      padding: 0.35rem 1rem;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid var(--card-border);
+      padding: 0.4rem 1.1rem;
+      background: rgba(255, 87, 34, 0.1);
+      border: 1px solid rgba(255, 87, 34, 0.3);
       border-radius: 20px;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       color: var(--brand-orange);
-      font-weight: 600;
+      font-weight: 700;
       margin-bottom: 1.5rem;
       letter-spacing: 1px;
+      text-transform: uppercase;
     }
 
     .hero-title {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: 3.2rem;
+      font-size: 3.4rem;
       font-weight: 800;
       line-height: 1.15;
       margin-bottom: 1.5rem;
@@ -170,16 +168,15 @@
     }
 
     .hero-desc {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       color: var(--text-muted);
       line-height: 1.7;
       margin-bottom: 2.5rem;
     }
 
-    /* Grid cards layout */
     .bento-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
       gap: 1.5rem;
     }
 
@@ -198,9 +195,9 @@
     }
 
     .card-title {
-      font-size: 1.25rem;
+      font-size: 1.3rem;
       font-weight: 700;
-      margin-bottom: 1rem;
+      margin-bottom: 1.2rem;
       display: flex;
       align-items: center;
       gap: 0.75rem;
@@ -208,9 +205,9 @@
     }
 
     .card-icon {
-      width: 36px;
-      height: 36px;
-      border-radius: 8px;
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
       background: rgba(255, 87, 34, 0.15);
       display: flex;
       align-items: center;
@@ -218,7 +215,6 @@
       color: var(--brand-orange);
     }
 
-    /* Calculator Form */
     .calc-form {
       display: flex;
       flex-direction: column;
@@ -277,10 +273,10 @@
 
     .calc-result {
       margin-top: 1rem;
-      padding: 1rem;
+      padding: 1.2rem;
       background: rgba(37, 99, 235, 0.1);
       border: 1px solid rgba(37, 99, 235, 0.3);
-      border-radius: 8px;
+      border-radius: 10px;
       text-align: center;
       display: none;
     }
@@ -289,21 +285,21 @@
       font-size: 0.85rem;
       color: #93C5FD;
       text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
 
     .calc-result-val {
-      font-size: 1.8rem;
+      font-size: 2rem;
       font-weight: 800;
       color: #FFFFFF;
-      margin: 0.2rem 0;
+      margin: 0.3rem 0;
     }
 
     .calc-result-sub {
-      font-size: 0.8rem;
+      font-size: 0.85rem;
       color: #BFDBFE;
     }
 
-    /* Footer */
     footer {
       border-top: 1px solid var(--card-border);
       padding: 2rem 0;
@@ -325,7 +321,6 @@
     <header>
       <a href="#" class="logo-box">
         <div class="logo-icon">
-          <!-- Concrete Cube SVG -->
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
             <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
@@ -336,16 +331,16 @@
       </a>
       <div class="badge-status">
         <div class="status-dot"></div>
-        Web Sitesi Hazırlanıyor
+        Web Platformu Hazırlanıyor
       </div>
     </header>
 
     <main>
       <section class="hero">
-        <div class="hero-tag">SİZİN İÇİN YAKINDA YAYINDAYIZ</div>
-        <h1 class="hero-title">Geleceğin Sağlam Temelleri EsnovaBeton İle Atılıyor</h1>
+        <div class="hero-tag">GELECEĞİN SAĞLAM TEMELLERİ</div>
+        <h1 class="hero-title">Yüksek Dayanım, Zamanında Teslimat, Sarsılmaz Güven</h1>
         <p class="hero-desc">
-          Yüksek basınç mukavemetli C25 - C50 beton sınıfları, tam otomasyonlu santral altyapısı, canlı transmiksör ve mobil pompa filomuz ile şantiyenizde zamanında döküm güvencesi sunuyoruz.
+          Yüksek mukavemetli C25 - C50 beton sınıfları, tam otomasyonlu santral altyapısı, canlı transmiksör ve mobil pompa filomuz ile şantiyenizde sıfır hata güvencesi sunuyoruz.
         </p>
       </section>
 
@@ -354,28 +349,28 @@
         <div class="card">
           <div class="card-title">
             <div class="card-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <rect x="4" y="4" width="16" height="16" rx="2"></rect>
                 <line x1="9" y1="9" x2="15" y2="9"></line>
                 <line x1="9" y1="13" x2="15" y2="13"></line>
                 <line x1="9" y1="17" x2="11" y2="17"></line>
               </svg>
             </div>
-            Hızlı Metreküp (m³) Hesaplayıcı
+            İnteraktif m³ Beton Hesaplayıcı
           </div>
           <div class="calc-form">
             <div class="calc-grid">
               <div class="form-group">
                 <label>En (Metre)</label>
-                <input type="number" id="calc-w" class="form-control" placeholder="Örn: 10" value="10">
+                <input type="number" id="calc-w" class="form-control" placeholder="10" value="10">
               </div>
               <div class="form-group">
                 <label>Boy (Metre)</label>
-                <input type="number" id="calc-l" class="form-control" placeholder="Örn: 20" value="20">
+                <input type="number" id="calc-l" class="form-control" placeholder="20" value="20">
               </div>
               <div class="form-group">
-                <label>Yükseklik (cm)</label>
-                <input type="number" id="calc-h" class="form-control" placeholder="Örn: 30" value="30">
+                <label>Kalınlık (cm)</label>
+                <input type="number" id="calc-h" class="form-control" placeholder="30" value="30">
               </div>
             </div>
             <div class="form-group">
@@ -389,12 +384,12 @@
             </div>
             <button class="btn-calc" onclick="calculateConcrete()">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              İhtiyaç Duyulan Betonu Hesapla
+              Saha İhtiyacını Hesapla
             </button>
             <div id="calc-result" class="calc-result">
               <div class="calc-result-title">Tahmini Sipariş İhtiyacı</div>
               <div class="calc-result-val" id="res-m3">63.00 m³</div>
-              <div class="calc-result-sub" id="res-details">(60.0 m³ teorik + %5 saha fire marjı dahil)</div>
+              <div class="calc-result-sub" id="res-details">(60.0 m³ net hacim + %5 saha fire marjı dahil)</div>
             </div>
           </div>
         </div>
@@ -405,23 +400,23 @@
             <div class="card-icon">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
-            Laboratuvar & TSE Kalite Standartları
+            Laboratuvar & TSE Standartları
           </div>
           <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;">
-            Tüm üretimlerimiz TS EN 206 standartlarına tam uyumlu akredite Ar-Ge laboratuvarlarımızda test edilir. 7 ve 28 günlük küp kırım basınç sonuçları şeffaf olarak paylaşılır.
+            Tüm üretimlerimiz TS EN 206 standartlarına tam uyumlu akredite laboratuvarlarımızda test edilir. 7 ve 28 günlük küp kırım basınç sonuçları şeffaf olarak raporlanır.
           </p>
           <div style="display: flex; flex-direction: column; gap: 0.75rem;">
-            <div style="display: flex; justify-content: space-between; font-size: 0.9rem; padding: 0.6rem; background: rgba(255,255,255,0.03); border-radius: 6px;">
+            <div style="display: flex; justify-content: space-between; font-size: 0.9rem; padding: 0.65rem; background: rgba(255,255,255,0.03); border-radius: 6px;">
               <span>TSE EN 206-1 Kalite Onayı</span>
               <strong style="color: var(--brand-green);">%100 Uyum</strong>
             </div>
-            <div style="display: flex; justify-content: space-between; font-size: 0.9rem; padding: 0.6rem; background: rgba(255,255,255,0.03); border-radius: 6px;">
+            <div style="display: flex; justify-content: space-between; font-size: 0.9rem; padding: 0.65rem; background: rgba(255,255,255,0.03); border-radius: 6px;">
               <span>Vanaya İzinsiz Su Eklemeye Karşı</span>
-              <strong style="color: var(--brand-orange);">Dijital Mühür</strong>
+              <strong style="color: var(--brand-orange);">Dijital Kilit</strong>
             </div>
-            <div style="display: flex; justify-content: space-between; font-size: 0.9rem; padding: 0.6rem; background: rgba(255,255,255,0.03); border-radius: 6px;">
+            <div style="display: flex; justify-content: space-between; font-size: 0.9rem; padding: 0.65rem; background: rgba(255,255,255,0.03); border-radius: 6px;">
               <span>GPS Transmiksör Canlı Takip</span>
-              <strong style="color: #60A5FA;">Aktif Sistem</strong>
+              <strong style="color: #60A5FA;">Aktif Altyapı</strong>
             </div>
           </div>
         </div>
@@ -435,9 +430,9 @@
             Şantiye Teklif & İletişim Hattı
           </div>
           <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;">
-            Şantiyeniz için hızlı fiyat teklifi almak, pompa rezervasyonu yaptırmak veya teknik detay sormak için satış ekibimizle iletişime geçin.
+            Şantiyeniz için hızlı teklif almak, mobil pompa rezervasyonu yaptırmak veya teknik detay sormak için kurumsal iletişim hattımızla iletişime geçin.
           </p>
-          <a href="mailto:info@esnovabeton.com" class="btn-calc" style="text-decoration: none; margin-bottom: 0.75rem;">
+          <a href="mailto:info@esnovabeton.com" class="btn-calc" style="text-decoration: none;">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             info@esnovabeton.com
           </a>
@@ -459,7 +454,7 @@
 
       const hM = hCm / 100;
       const theoreticalM3 = w * l * hM;
-      const totalM3 = theoreticalM3 * 1.05; // %5 fire
+      const totalM3 = theoreticalM3 * 1.05;
 
       document.getElementById('res-m3').innerText = totalM3.toFixed(2) + " m³ (" + betonClass + ")";
       document.getElementById('res-details').innerText = "(" + theoreticalM3.toFixed(2) + " m³ net hacim + %5 saha döküm fire marjı dahil)";
