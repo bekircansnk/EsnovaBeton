@@ -1,0 +1,98 @@
+﻿name,listName,desc,labels
+📧 cPanel Üzerinden info@esnovabeton.com E-posta Açılışı,"🌐 Faz 0: Domain, cPanel & E-posta Altyapısı (BUGÜN)","cPanel > E-posta Hesapları > Oluştur adımıyla info@esnovabeton.com, satis@esnovabeton.com ve teklif@esnovabeton.com hesapları açılacaktır.
+
+Kontrol Adımları:
+- info@esnovabeton.com açıldı
+- satis@esnovabeton.com açıldı
+- Gmail yönlendirmesi yapıldı
+- Mobil telefon SSL ayarları yapıldı","Altyapı, Kritik"
+"☁️ Cloudflare DNS, SSL & DDoS Koruma Entegrasyonu","🌐 Faz 0: Domain, cPanel & E-posta Altyapısı (BUGÜN)","Cloudflare üzerinde hesap açılıp esnovabeton.com eklenecek, NS adresleri domain panosuna girilip 5.180.185.253 IP'si yönlendirilecektir.
+
+Kontrol Adımları:
+- Cloudflare hesabı açıldı
+- Domain NS adresleri güncellendi
+- Ücretsiz SSL aktifleştirildi","Altyapı, Güvenlik"
+📁 cPanel public_html Yayın Klasörü Hazırlığı,"🌐 Faz 0: Domain, cPanel & E-posta Altyapısı (BUGÜN)","cPanel Dosya Yöneticisi > /home/esnovabe/public_html içerisindeki eski varsayılan dosyalar temizlenecek, ilk karşılama sayfası yüklenecektir.
+
+Kontrol Adımları:
+- Eski index.html temizlendi
+- Geçici açılış sayfası yüklendi",Altyapı
+🔍 Rakip Beton Firmaları Analizi (Türkiye & Dünya),📌 Faz 1: Marka & Derin Pazarlama Araştırması (1. Gün),"Akçansa, Çimsa, Oyak Beton, Holcim, CEMEX, Heidelberg Materials firmalarının web siteleri, renk paletleri, görsel dilleri ve teklif alma mekanizmaları incelenecektir.
+
+Kontrol Adımları:
+- Türk beton devleri web incelemesi
+- Küresel beton devleri web incelemesi
+- Teklif alma & m³ hesaplayıcı kıyaslaması","Araştırma, Kritik"
+🎨 Beton Sektörü Renk Paleti & Psikoloji Raporu,📌 Faz 1: Marka & Derin Pazarlama Araştırması (1. Gün),"Beton grisi (#4A5568), Güven Mavisi (#1E3A8A), Şantiye Turuncusu (#EA580C) ve Çevre Yeşili (#059669) dengesi ve renk psikolojisi raporlanmıştır.
+
+Kontrol Adımları:
+- Ana renk seçimi
+- Vurgu rengi
+- Lucide Icon seti","Tasarım, Kurumsal Kimlik"
+🤖 AI_RESEARCH_PROMPTS.md Promptlarının Çalıştırılması,📌 Faz 1: Marka & Derin Pazarlama Araştırması (1. Gün),"ChatGPT, Claude, Perplexity ve Gemini Deep Research araçlarına hazırlanan 4 ana prompt girilecek, derin raporlar toplanacaktır.
+
+Kontrol Adımları:
+- Prompt 1 çalıştırıldı
+- Prompt 2 çalıştırıldı
+- Prompt 3 çalıştırıldı
+- Prompt 4 çalıştırıldı","AI Prompt, Araştırma"
+✏️ EsnovaBeton Logo & Vektörel Amblem Tasarımı,🎨 Faz 2: Kurumsal Kimlik & Görsel Hafıza (2-3. Gün),"Beton mikseri, sağlamlık geometrisi, küp basınç test simgesi ve dinamik E/B harf yapısıyla akılda kalıcı 3 alternatif amblem çizimi.
+
+Kontrol Adımları:
+- Vektörel logo alternatifleri
+- Kartvizit & Başlıklı kağıt
+- Transmiksör araç giydirme",Kurumsal Kimlik
+📐 Tipografi & Slogan (Value Proposition),🎨 Faz 2: Kurumsal Kimlik & Görsel Hafıza (2-3. Gün),"'Geleceğin Sağlam Temelleri', 'Yüksek Dayanım, Zamanında Teslimat' vb. slogan varyasyonları ve modern tipografi.
+
+Kontrol Adımları:
+- Kurumsal slogan seçimi
+- Font ailesi tanımları
+- Kullanım kılavuzu",Kurumsal Kimlik
+🏗️ Hero Bölümü & Likit Cam / WebGL Görsel Efektler,💻 Faz 3: Web Sitesi Mimarisi & UI/UX (4-7. Gün),"Kullanıcıyı ilk bakışta büyüleyecek 'WOW Factor' Likit Cam / WebGL parçacık efektli interaktif Hero alanı ve Bento Grid KPI kartları.
+
+Kontrol Adımları:
+- Hero alanı tasarımı
+- Bento Grid KPI kartları
+- 44px dokunma hedefleri","Web Geliştirme, UI/UX"
+🧮 İnteraktif Metreküp & Pompa Hesaplayıcı Modülü,💻 Faz 3: Web Sitesi Mimarisi & UI/UX (4-7. Gün),"Müteahhitlerin ve bireysel yapı sahiplerinin en-boy-yükseklik girerek ihtiyaç duyduğu hazır beton miktarını (m³) ve pompa tipini hesaplayan interaktif araç.
+
+Kontrol Adımları:
+- Ölçü girdi alanları
+- Beton sınıf seçimi (C25/30 - C50/60)
+- Teklif al butonu entegrasyonu","Web Geliştirme, Özellik"
+"📜 Ürünler, Beton Sınıfları & Kalite Laboratuvarı Sayfası",💻 Faz 3: Web Sitesi Mimarisi & UI/UX (4-7. Gün),"Kırılma basınç testleri, Ar-Ge laboratuvarı, brüt beton, şap betonu, kendiliğinden yerleşen beton (KYB) ürün katalog ekranları.
+
+Kontrol Adımları:
+- Beton sınıf kartları
+- TSE/ISO kalite belgeleri
+- Laboratuvar görselleri",Web Geliştirme
+🎯 B2B Müteahhit & Şantiye Hızlı Teklif Formu,"📝 Faz 4: İçerik, SEO & B2B Formlar (8-10. Gün)","Şantiye adresi, döküm tarihi, döküm hızı (m³/saat) ve pompa ihtiyacı içeren dinamik teklif talebi formu (info@esnovabeton.com entegreli).
+
+Kontrol Adımları:
+- Form tasarımı
+- WhatsApp hızlı döküm hattı
+- E-posta bildirim testi","İçerik, SEO"
+🔎 Hazır Beton SEO & AIO Optimizasyonu,"📝 Faz 4: İçerik, SEO & B2B Formlar (8-10. Gün)","'Hazır beton fiyatları', 'C30 beton metreküp fiyatı', 'Pompalı beton dökümü' anahtar kelimeleri ve JSON-LD şema verileri.
+
+Kontrol Adımları:
+- Meta başlık & açıklamalar
+- Schema.org JSON-LD
+- Google Benim İşletmem kaydı",SEO
+📹 Şantiye & Transmiksör Aksiyon Video İçerikleri,📲 Faz 5: 360° Sosyal Medya & Saha Pazarlaması (11-14. Gün),"Instagram Reels & YouTube Shorts için taze beton döküm anı, slump testi, taze beton sıcaklık ölçümü ve mikser aksiyon videoları.
+
+Kontrol Adımları:
+- Slump testi video çekimi
+- Transmiksör tanıtım videosu
+- Şantiye referans videosu",Sosyal Medya
+💼 LinkedIn B2B Müteahhit Kampanyası,📲 Faz 5: 360° Sosyal Medya & Saha Pazarlaması (11-14. Gün),"İnşaat mühendisleri, şantiye şefleri ve müteahhitlere yönelik kurumsal B2B bilgilendirici teknik gönderiler ve vaka analizleri.
+
+Kontrol Adımları:
+- Teknik makale paylaşımları
+- Bölgesel müteahhit duyurusu
+- Referans proje görselleri",B2B Pazarlama
+🌐 Web Sitesi Canlıya Alınması & cPanel Upload,🚀 Faz 6: Saha Lansmanı & Canlıya Geçiş (15. Gün),"Web platformunun public_html klasörüne yüklenmesi, Cloudflare Edge & SSL kontrolü, mobilde 60 FPS performans testi.
+
+Kontrol Adımları:
+- public_html yüklemesi yapıldı
+- Google Search Console kaydı
+- Dijital katalog teslimi","Lansman, Kritik"

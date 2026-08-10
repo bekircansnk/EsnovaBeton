@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/esnovabe/public_html
+    - /bin/cp -R index.html $DEPLOYPATH/
+    - /bin/cp -R * $DEPLOYPATH/ 2>/dev/null || :
