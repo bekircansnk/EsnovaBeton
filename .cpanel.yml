@@ -2,5 +2,8 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/esnovabe/public_html
-    - /bin/cp -R index.html $DEPLOYPATH/
-    - /bin/cp -R * $DEPLOYPATH/ 2>/dev/null || :
+    - /bin/cp index.html $DEPLOYPATH/
+    - /bin/cp -R css $DEPLOYPATH/ 2>/dev/null || :
+    - /bin/cp -R js $DEPLOYPATH/ 2>/dev/null || :
+    - /bin/cp -R assets $DEPLOYPATH/ 2>/dev/null || :
+    - /bin/cp -R images $DEPLOYPATH/ 2>/dev/null || :

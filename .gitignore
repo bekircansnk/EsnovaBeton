@@ -1,0 +1,17 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Internal docs & research
+.docs/
+.brain/
+
+# Node & Build artifacts
+node_modules/
+.next/
+out/
+
+# Local scripts & data files
+*.json
+*.csv
+*.py
