@@ -2,8 +2,8 @@
 .DS_Store
 Thumbs.db
 
-# Internal docs & research
-.docs/
+# Documentation & Research folder (ignored by Git, visible in Finder)
+docs/
 .brain/
 
 # Node & Build artifacts
