@@ -1,28 +1,13 @@
 <!DOCTYPE html>
-<html lang="tr" class="dark">
+<html lang="tr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EsnovaBeton — Geleceğin Sağlam Temelleri | Hazır Beton & Otomasyonlu Döküm</title>
-  <meta name="description" content="EsnovaBeton: Yüksek mukavemetli hazır beton, C25-C50 beton sınıfları, canlı transmiksör ve mobil pompa filosu ile şantiyenizde zamanında döküm güvencesi.">
+  <title>EsnovaBeton — Yakında Hizmetinizde</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --bg-dark: #12151C;
-      --card-bg: rgba(30, 34, 42, 0.75);
-      --card-border: rgba(255, 255, 255, 0.08);
-      --text-main: #F3F4F6;
-      --text-muted: #9CA3AF;
-      --concrete-gray: #4A5568;
-      --brand-orange: #FF5722;
-      --brand-orange-hover: #E04818;
-      --brand-blue: #2563EB;
-      --brand-green: #10B981;
-    }
-
     * {
       box-sizing: border-box;
       margin: 0;
@@ -31,467 +16,105 @@
     }
 
     body {
-      background-color: var(--bg-dark);
-      color: var(--text-main);
+      background-color: #0F1117;
+      color: #F3F4F6;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      overflow-x: hidden;
-      background-image: 
-        radial-gradient(circle at 15% 20%, rgba(255, 87, 34, 0.14) 0%, transparent 40%),
-        radial-gradient(circle at 85% 80%, rgba(37, 99, 235, 0.14) 0%, transparent 40%);
-    }
-
-    .bg-grid {
-      position: fixed;
-      inset: 0;
-      background-size: 40px 40px;
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-                        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 1.5rem;
-      width: 100%;
-      position: relative;
-      z-index: 1;
-    }
-
-    /* Live Update Banner */
-    .top-banner {
-      background: linear-gradient(90deg, rgba(255, 87, 34, 0.2), rgba(37, 99, 235, 0.2));
-      border-bottom: 1px solid rgba(255, 87, 34, 0.3);
-      padding: 0.6rem 0;
-      text-align: center;
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: #F3F4F6;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-    }
-
-    header {
-      padding: 1.5rem 0;
-      display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid var(--card-border);
+      padding: 3rem 1.5rem;
+      text-align: center;
     }
 
-    .logo-box {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      text-decoration: none;
-    }
-
-    .logo-icon {
-      width: 46px;
-      height: 46px;
-      background: linear-gradient(135deg, var(--brand-orange), #D93804);
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 20px rgba(255, 87, 34, 0.4);
-    }
-
-    .logo-text {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 1.6rem;
+    .brand-header {
+      font-size: 1.5rem;
       font-weight: 700;
+      letter-spacing: 2px;
       color: #FFFFFF;
-      letter-spacing: -0.5px;
-    }
-
-    .logo-text span {
-      color: var(--brand-orange);
-    }
-
-    .badge-status {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.4rem 0.9rem;
-      border-radius: 9999px;
-      background: rgba(16, 185, 129, 0.1);
-      border: 1px solid rgba(16, 185, 129, 0.3);
-      color: #34D399;
-      font-size: 0.85rem;
-      font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
     }
 
-    .status-dot {
-      width: 8px;
-      height: 8px;
-      background-color: var(--brand-green);
-      border-radius: 50%;
-      box-shadow: 0 0 10px var(--brand-green);
-      animation: pulse 2s infinite;
-    }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.4; transform: scale(1.2); }
-    }
-
-    main {
-      flex: 1;
-      padding: 3.5rem 0;
+    .content-box {
+      max-width: 600px;
+      margin: auto;
       display: flex;
       flex-direction: column;
-      gap: 3.5rem;
+      align-items: center;
+      gap: 1.5rem;
     }
 
-    .hero {
-      text-align: center;
-      max-width: 850px;
-      margin: 0 auto;
-    }
-
-    .hero-tag {
+    .badge {
       display: inline-block;
-      padding: 0.4rem 1.1rem;
-      background: rgba(255, 87, 34, 0.1);
-      border: 1px solid rgba(255, 87, 34, 0.3);
-      border-radius: 20px;
+      padding: 0.4rem 1rem;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 9999px;
       font-size: 0.85rem;
-      color: var(--brand-orange);
-      font-weight: 700;
-      margin-bottom: 1.5rem;
+      font-weight: 500;
+      color: #9CA3AF;
       letter-spacing: 1px;
       text-transform: uppercase;
     }
 
-    .hero-title {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 3.4rem;
-      font-weight: 800;
-      line-height: 1.15;
-      margin-bottom: 1.5rem;
-      background: linear-gradient(180deg, #FFFFFF 0%, #9CA3AF 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .hero-desc {
-      font-size: 1.25rem;
-      color: var(--text-muted);
-      line-height: 1.7;
-      margin-bottom: 2.5rem;
-    }
-
-    .bento-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .card {
-      background: var(--card-bg);
-      backdrop-filter: blur(12px);
-      border: 1px solid var(--card-border);
-      border-radius: 16px;
-      padding: 2rem;
-      transition: all 0.3s ease;
-    }
-
-    .card:hover {
-      border-color: rgba(255, 87, 34, 0.3);
-      transform: translateY(-4px);
-    }
-
-    .card-title {
-      font-size: 1.3rem;
+    .main-title {
+      font-size: 2.8rem;
       font-weight: 700;
-      margin-bottom: 1.2rem;
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
       color: #FFFFFF;
+      line-height: 1.2;
     }
 
-    .card-icon {
-      width: 38px;
-      height: 38px;
-      border-radius: 10px;
-      background: rgba(255, 87, 34, 0.15);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--brand-orange);
+    .description {
+      font-size: 1.15rem;
+      color: #9CA3AF;
+      line-height: 1.6;
+      font-weight: 300;
     }
 
-    .calc-form {
-      display: flex;
-      flex-direction: column;
-      gap: 1.2rem;
-    }
-
-    .calc-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 0.75rem;
-    }
-
-    .form-group label {
-      display: block;
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      margin-bottom: 0.4rem;
-    }
-
-    .form-control {
-      width: 100%;
-      padding: 0.75rem 1rem;
-      background: rgba(18, 21, 28, 0.8);
-      border: 1px solid var(--card-border);
-      border-radius: 8px;
-      color: #FFFFFF;
+    .email-link {
+      margin-top: 1rem;
       font-size: 1rem;
-      outline: none;
+      color: #E5E7EB;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      padding-bottom: 2px;
       transition: border-color 0.2s;
     }
 
-    .form-control:focus {
-      border-color: var(--brand-orange);
-    }
-
-    .btn-calc {
-      width: 100%;
-      padding: 0.9rem;
-      background: var(--brand-orange);
-      color: #FFFFFF;
-      border: none;
-      border-radius: 8px;
-      font-weight: 700;
-      font-size: 1rem;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      transition: background 0.2s, transform 0.1s;
-    }
-
-    .btn-calc:hover {
-      background: var(--brand-orange-hover);
-    }
-
-    .btn-whatsapp {
-      background: #059669;
-    }
-    .btn-whatsapp:hover {
-      background: #047857;
-    }
-
-    .calc-result {
-      margin-top: 1rem;
-      padding: 1.2rem;
-      background: rgba(37, 99, 235, 0.1);
-      border: 1px solid rgba(37, 99, 235, 0.3);
-      border-radius: 10px;
-      text-align: center;
-      display: none;
-    }
-
-    .calc-result-title {
-      font-size: 0.85rem;
-      color: #93C5FD;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    .calc-result-val {
-      font-size: 2rem;
-      font-weight: 800;
-      color: #FFFFFF;
-      margin: 0.3rem 0;
-    }
-
-    .calc-result-sub {
-      font-size: 0.85rem;
-      color: #BFDBFE;
+    .email-link:hover {
+      border-color: #FFFFFF;
     }
 
     footer {
-      border-top: 1px solid var(--card-border);
-      padding: 2rem 0;
-      text-align: center;
-      color: var(--text-muted);
-      font-size: 0.9rem;
+      font-size: 0.85rem;
+      color: #6B7280;
+      font-weight: 300;
     }
 
-    @media (max-width: 768px) {
-      .hero-title { font-size: 2.2rem; }
-      .calc-grid { grid-template-columns: 1fr; }
+    @media (max-width: 640px) {
+      .main-title { font-size: 2rem; }
+      .description { font-size: 1rem; }
     }
   </style>
 </head>
 <body>
-  <div class="bg-grid"></div>
 
-  <!-- Otomatik Deploy Test Banner -->
-  <div class="top-banner">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-    OTOMATİK YAYINLAMA AKTİF — SIFIR MANUEL MÜDAHALE (10.08.2026 CANLI SÜRÜM)
+  <div class="brand-header">
+    EsnovaBeton
   </div>
 
-  <div class="container">
-    <header>
-      <a href="#" class="logo-box">
-        <div class="logo-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-            <line x1="12" y1="22.08" x2="12" y2="12"></line>
-          </svg>
-        </div>
-        <div class="logo-text">ESNOVA<span>BETON</span></div>
-      </a>
-      <div class="badge-status">
-        <div class="status-dot"></div>
-        Canlı Yayın & Otomasyon Aktif
-      </div>
-    </header>
-
-    <main>
-      <section class="hero">
-        <div class="hero-tag">GELECEĞİN SAĞLAM TEMELLERİ ESNOVABETON İLE ATILIYOR</div>
-        <h1 class="hero-title">Yüksek Dayanım, Zamanında Teslimat, Sarsılmaz Güven</h1>
-        <p class="hero-desc">
-          Yüksek mukavemetli C25 - C50 beton sınıfları, tam otomasyonlu santral altyapısı, canlı transmiksör ve mobil pompa filomuz ile şantiyenizde sıfır hata güvencesi sunuyoruz.
-        </p>
-      </section>
-
-      <section class="bento-grid">
-        <!-- Card 1: Metreküp Hesaplayıcı -->
-        <div class="card">
-          <div class="card-title">
-            <div class="card-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="4" y="4" width="16" height="16" rx="2"></rect>
-                <line x1="9" y1="9" x2="15" y2="9"></line>
-                <line x1="9" y1="13" x2="15" y2="13"></line>
-                <line x1="9" y1="17" x2="11" y2="17"></line>
-              </svg>
-            </div>
-            İnteraktif m³ Beton Hesaplayıcı
-          </div>
-          <div class="calc-form">
-            <div class="calc-grid">
-              <div class="form-group">
-                <label>En (Metre)</label>
-                <input type="number" id="calc-w" class="form-control" placeholder="10" value="10">
-              </div>
-              <div class="form-group">
-                <label>Boy (Metre)</label>
-                <input type="number" id="calc-l" class="form-control" placeholder="20" value="20">
-              </div>
-              <div class="form-group">
-                <label>Kalınlık (cm)</label>
-                <input type="number" id="calc-h" class="form-control" placeholder="30" value="30">
-              </div>
-            </div>
-            <div class="form-group">
-              <label>Beton Sınıfı</label>
-              <select id="calc-class" class="form-control">
-                <option value="C25/30">C25/30 — Standart Konut & Döşeme</option>
-                <option value="C30/37" selected>C30/37 — Yüksek Mukavemet & Temel</option>
-                <option value="C35/45">C35/45 — Kolon, Kiriş & Özel Statik</option>
-                <option value="C40/50">C40/50 — Altyapı & Ağır Sanayi</option>
-              </select>
-            </div>
-            <button class="btn-calc" onclick="calculateConcrete()">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              Saha İhtiyacını Hesapla
-            </button>
-            <div id="calc-result" class="calc-result">
-              <div class="calc-result-title">Tahmini Sipariş İhtiyacı</div>
-              <div class="calc-result-val" id="res-m3">63.00 m³</div>
-              <div class="calc-result-sub" id="res-details">(60.0 m³ net hacim + %5 saha fire marjı dahil)</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 2: Kalite & Standartlar -->
-        <div class="card">
-          <div class="card-title">
-            <div class="card-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-            Laboratuvar & TSE Standartları
-          </div>
-          <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;">
-            Tüm üretimlerimiz TS EN 206 standartlarına tam uyumlu akredite laboratuvarlarımızda test edilir. 7 ve 28 günlük küp kırım basınç sonuçları şeffaf olarak raporlanır.
-          </p>
-          <div style="display: flex; flex-direction: column; gap: 0.75rem;">
-            <div style="display: flex; justify-content: space-between; font-size: 0.9rem; padding: 0.65rem; background: rgba(255,255,255,0.03); border-radius: 6px;">
-              <span>TSE EN 206-1 Kalite Onayı</span>
-              <strong style="color: var(--brand-green);">%100 Uyum</strong>
-            </div>
-            <div style="display: flex; justify-content: space-between; font-size: 0.9rem; padding: 0.65rem; background: rgba(255,255,255,0.03); border-radius: 6px;">
-              <span>Vanaya İzinsiz Su Eklemeye Karşı</span>
-              <strong style="color: var(--brand-orange);">Dijital Kilit</strong>
-            </div>
-            <div style="display: flex; justify-content: space-between; font-size: 0.9rem; padding: 0.65rem; background: rgba(255,255,255,0.03); border-radius: 6px;">
-              <span>GPS Transmiksör Canlı Takip</span>
-              <strong style="color: #60A5FA;">Aktif Altyapı</strong>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 3: İletişim & Hızlı Teklif -->
-        <div class="card">
-          <div class="card-title">
-            <div class="card-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            </div>
-            Şantiye Teklif & İletişim Hattı
-          </div>
-          <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;">
-            Şantiyeniz için hızlı teklif almak, mobil pompa rezervasyonu yaptırmak veya teknik detay sormak için kurumsal iletişim hattımızla iletişime geçin.
-          </p>
-          <a href="mailto:info@esnovabeton.com" class="btn-calc" style="text-decoration: none; margin-bottom: 0.75rem;">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            info@esnovabeton.com
-          </a>
-          <a href="https://wa.me/?text=Merhaba%20EsnovaBeton,%20şantiyem%20için%20hazır%20beton%20ve%20pompa%20teklifi%20almak%20istiyorum." target="_blank" class="btn-calc btn-whatsapp" style="text-decoration: none;">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-            WhatsApp Hızlı Döküm Hattı
-          </a>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2026 EsnovaBeton — Tüm Hakları Saklıdır. Geleceğin Sağlam Temelleri.</p>
-    </footer>
+  <div class="content-box">
+    <div class="badge">YAKINDA HİZMETİNİZDE</div>
+    <h1 class="main-title">Web Sitemiz Hazırlanıyor</h1>
+    <p class="description">
+      Geleceğin sağlam temelleri için dijital platformumuz çok yakında yayında olacaktır.
+    </p>
+    <a href="mailto:info@esnovabeton.com" class="email-link">info@esnovabeton.com</a>
   </div>
 
-  <script>
-    function calculateConcrete() {
-      const w = parseFloat(document.getElementById('calc-w').value) || 0;
-      const l = parseFloat(document.getElementById('calc-l').value) || 0;
-      const hCm = parseFloat(document.getElementById('calc-h').value) || 0;
-      const betonClass = document.getElementById('calc-class').value;
+  <footer>
+    &copy; 2026 EsnovaBeton. Tüm Hakları Saklıdır.
+  </footer>
 
-      const hM = hCm / 100;
-      const theoreticalM3 = w * l * hM;
-      const totalM3 = theoreticalM3 * 1.05;
-
-      document.getElementById('res-m3').innerText = totalM3.toFixed(2) + " m³ (" + betonClass + ")";
-      document.getElementById('res-details').innerText = "(" + theoreticalM3.toFixed(2) + " m³ net hacim + %5 saha döküm fire marjı dahil)";
-      document.getElementById('calc-result').style.display = 'block';
-    }
-  </script>
 </body>
 </html>
